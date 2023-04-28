@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Games</title>
+</head>
+
+<body>
+	<header class="header center">
+		<div class="header__body">
+			<h1 class="header__title">Добро пожаловать на мой сайт!</h1>
+			<p class="header__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+				<span>поехали</span> и
+				<span>приступай</span>
+			</p>
+			<a href="#section-games" class="header__button button">Поехали!</a>
+		</div>
+	</header>
+
+	<section id="section-games" class="games center">
+		<div class="games__item">
+			<a href="#gameSeasons" class="games__img"><img src="img/game1.png" alt="Игра1"></a>
+			<a class="games__link" href="#">Игра 1</a>
+		</div>
+		<div class="games__item">
+			<a href="#gameRememberWords" class="games__img"><img src="img/game2.png" alt="Игра2"></a>
+			<a class="games__link" href="#">Игра 2</a>
+		</div>
+		<div class="games__item">
+			<a href="#gamePuzzles" class="games__img"><img src="img/game3.png" alt="Игра3"></a>
+			<a class="games__link" href="#">Игра 3</a>
+		</div>
+	</section>
+
+
+
+	<section class="game-seasons gameblock" id="gameSeasons">
+		<div class="gameblock__container center">
+			<div class="gameblock__content gameblock__content_game-seasons">
+				<h2 class="gameblock__title">Времена года!</h2>
+				<div class="gameblock__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</div>
+				<button href="" class="button" onclick="seasons();">Играть!</button>
+			</div>
+			<div class="gameblock__img gameblock__img_game-seasons">
+				<img src="img/gameblock-1.svg" alt="Игра 1">
+			</div>
+		</div>
+	</section>
+
+	<section class="game-rememberWords gameblock" id="gameRememberWords">
+		<div class="gameblock__container gameblock__container_game-rememberWords center">
+			<div class="gameblock__img gameblock__img_game-rememberWords">
+				<img src="img/gameblock-2.svg" alt="Игра 2">
+			</div>
+			<div class="gameblock__content gameblock__content_game-rememberWords">
+				<h2 class="gameblock__title">Запомни слова</h2>
+				<div class="gameblock__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</div>
+				<button href="" class="button" onclick="rememberWords();">Играть!</button>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="game-puzzles" id="gamePuzzles">
+		<div class="game-puzzles__container center">
+			<h2 class="gameblock__title">Игра в загадки</h2>
+			<div class="gameblock__text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</div>
+			<button href="" class="button" onclick="puzzles();">Играть!</button>
+		</div>
+	</section>
+
+
+	<footer class="footer center">
+		<p class="footer__text">Все права защищены</p>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

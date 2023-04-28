@@ -1,0 +1,86 @@
+@media (max-width: 1200px) {
+	.center {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
+
+@media (max-width: 1020px) {
+	.gameblock {
+		&__container {
+			flex-direction: column;
+			text-align: center;
+			&_game-rememberWords {
+				flex-direction: column-reverse;
+			}
+		}
+		&__content {
+			width: 100%;
+			padding-bottom: 60px;
+			align-self: center;
+		}
+		&__img {
+			padding: 0 0 69% 0;
+		}
+	}
+	.button {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 820px) {
+	.header {
+		&__body {
+			padding-top: 238px;
+			text-align: center;
+		}
+		&__text {
+			margin: 0 auto;
+		}
+		&__button {
+			margin: 0 auto;
+		}
+	}
+	.games {
+		flex-direction: column;
+		&__item {
+			width: 100%;
+		}
+	}
+	.gameblock {
+		padding-top: 51px;
+		padding-bottom: 85px;
+	}
+	.game-puzzles{
+		&__container {
+			padding-top: 51px;
+			padding-bottom: 487px;
+		}
+	}
+}
+
+@media (max-width: 470px) {
+	.header {
+		&__title {
+			font-size: 32px;
+		}
+		&__text {
+			font-size: 14px;
+			line-height: 157%;
+		}
+		&__button {
+			margin: 0 auto;
+		}
+	}
+	.gameblock {
+		&__title {
+			font-size: 32px;
+			padding-bottom: 32px;
+		}
+
+		&__text {
+			font-size: 14px;
+			line-height: 157%;
+		}
+	}
+}
